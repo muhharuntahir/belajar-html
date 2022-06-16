@@ -1,0 +1,20 @@
+body{
+    font-family: Arial;
+}
+
+h1{
+    color: green;
+    margin: 2em;
+}
+
+h2{
+    color: green;
+    font-size: small;
+    font-family: sans-serif;
+}
+
+footer{
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+}
