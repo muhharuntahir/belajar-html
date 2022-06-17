@@ -1,37 +1,22 @@
-body{
+body {
     font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    color: green;
-    margin: 2em;
+main{
+    padding: 20px;
+}
+h1 {
+    color: white;
+    /*margin: 2em;*/
 }
 
-h2{
+h2 {
     font-variant: small-caps;
     color: green;
     font-size: large;
     font-family: sans-serif;
-}
-
-footer{
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
-}
-
-nav a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-nav a:hover {
-    font-weight: bold;
-}
-
-.profile header{
-    text-align: center;
 }
 
 footer {
@@ -40,4 +25,54 @@ footer {
     background-color: #00a2c6;
     text-align: center;
     font-weight: bold;
+}
+
+nav {
+    background-color: #2a5eff;
+    padding: 5px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 5px;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.jumbotron {
+    padding: 60px;
+    background-color: #508aff;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.feature-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
 }
