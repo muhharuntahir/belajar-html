@@ -1,12 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial;
     margin: 0;
     padding: 0;
 }
 
-main{
+main {
+    overflow: auto;
     padding: 20px;
 }
+
 h1 {
     color: white;
     /*margin: 2em;*/
@@ -17,6 +23,10 @@ h2 {
     color: green;
     font-size: large;
     font-family: sans-serif;
+}
+
+header{
+    display: inline;
 }
 
 footer {
@@ -30,12 +40,15 @@ footer {
 nav {
     background-color: #2a5eff;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
-nav li{
+nav li {
     display: inline;
     margin-left: 5px;
 }
+
 nav a {
     font-size: 18px;
     font-weight: 400;
@@ -45,6 +58,17 @@ nav a {
 
 nav a:hover {
     font-weight: bold;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
 }
 
 .jumbotron {
@@ -76,3 +100,14 @@ nav a:hover {
     padding: 20px;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 1000px){
+    #content, aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*@media screen and (max-width: 600px){*/
+/*    */
+/*}*/
