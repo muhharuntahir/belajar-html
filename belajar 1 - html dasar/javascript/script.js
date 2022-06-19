@@ -51,13 +51,20 @@ function performCalculation(){
     let result = 0;
     if (calculator.operator === '+'){
         result = parseInt(calculator.firstNumber) + parseInt(calculator.displayNumber);
-    } else if(calculator.operator === '-'){
+    } else {
         result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
-    } else{
-        result = "Anda salah memasukkan input"
     }
 
+    const history = {
+        firstNumber : calculator.firstNumber,
+        secondNumber : calculator.displayNumber,
+        operator: calculator.operator,
+        result: result
+    }
+
+    putHistory(history);
     calculator.displayNumber = result;
+    renderHistory()
 }
 
 const buttons = document.querySelectorAll('.button');
