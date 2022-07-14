@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .dark_blue{
+            background-color: darkblue;
+        }
+
+        .light_blue{
+            background-color: lightblue;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .box {
+            min-height: 150px;
+            width: 100%;
+        }
+
+        /*untuk layar berukuran kecil*/
+        @media screen and (min-width: 450px){
+                .light_blue, .green{
+                    width: 50%;
+                }
+        }
+
+        /*untuk layar berukuran sedang*/
+        @media screen and (min-width: 550px){
+                .red{
+                    width: 33%;
+                }
+
+                .orange{
+                    width: 67%;
+                }
+        }
+
+        /*untuk layar berukuran besar*/
+        @media screen and (min-width: 800px){
+            .container{
+                width: 800px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    <title>Responsif</title>
+</head>
+<body>
+<div class="container">
+    <div class="box dark_blue"></div>
+    <div class="box light_blue"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box orange"></div>
+</div>
+
+</body>
+</html>
